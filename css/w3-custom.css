@@ -1,0 +1,52 @@
+/*
+
+
+THIS FILE ***CANNOT*** CONTAINS COLORS. 
+
+Colors go to w3-theme-XXXXXXX.css
+
+
+*/
+
+
+
+html, body {
+/* 	height: 100%; */
+/* 	margin: 0; */
+/* 	padding: 0; */
+/* 	position: relative; */
+}
+
+#page {
+/* 	position: relative; */
+/* 	min-height: 100%; */
+}
+
+#pageFooter {
+/* 	min-height: 100px; */
+/* 	position: absolute; */
+/* 	bottom: 0; */
+/* 	left: 0; */
+/* 	margin-top: 100px; */
+	
+/* 	width: 100%; */
+}
+	
+
+#page #pageSection{
+	padding-bottom: 100px;
+}
+
+p{
+	text-align: justify;
+}
+
+
+
+/*
+THIS FILE ***CANNOT*** CONTAINS COLORS. 
+
+Colors go to w3-theme-XXXXXXX.css
+
+*/
+

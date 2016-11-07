@@ -1,0 +1,11 @@
+
+code{
+	color: #A9B7C6;
+}
+
+.hljs-type, .hljs-string, .hljs-number, .hljs-selector-id,
+	.hljs-selector-class, .hljs-quote, .hljs-template-tag, 
+	.hljs-deletion,.hljs-title, .hljs-section {
+	color: #CC7832
+}
+

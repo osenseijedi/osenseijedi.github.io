@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularCms">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="lib/w3css/w3.css" type="text/css" />
+	<link rel="stylesheet" href="lib/highlight/default.min.css"/>
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css"/>
+	
+	<link rel="stylesheet" href="css/w3-custom.css" type="text/css" />
+	<link rel="stylesheet" href="css/w3-theme-darcula.css" type="text/css" />
+	<link rel="stylesheet" href="css/highlight-custom.css"/>
+	
+	<script src="lib/marked/marked.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-route.min.js"></script>
+	
+		
+	<script src="lib/highlight/highlight.min.js"></script>
+	<script src="lib/angular-marked/angular-marked.min.js"></script>
+	
+	<script src="js/app.js"></script>
+	<script src="js/MainController.js"></script>
+	
+</head>
+<body class="w3-theme-d4">
+	<div id="page">
+		<header >
+			<div  class="w3-container">
+				<div class="w3-row">
+					<div class="w3-col s12 m3">
+						<h2>
+							A Site Title
+						</h2>
+					</div>
+					<div class="w3-col s12 m8"> 
+						<nav class="w3-topnav">
+							<a href="#/home"  class="{{ active == 'home'  ? 'w3-theme-action w3-card-2' : ''}}">Home</a>
+							<a href="#/page1" class="{{ active == 'page1' ? 'w3-theme-action w3-card-2' : ''}}">Page 1</a>
+							<a href="#/page2" class="{{ active == 'page2' ? 'w3-theme-action w3-card-2' : ''}}">Page 2</a>
+							<a href="#/page3" class="{{ active == 'page3' ? 'w3-theme-action w3-card-2' : ''}}">Page 3</a>
+							<a href="#/about" class="{{ active == 'about' ? 'w3-theme-action w3-card-2' : ''}}">About Us</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section id="pageSection" class="w3-theme-d3 w3-card-4" >
+			<div  class="w3-container ">
+				<div class="w3-row">
+					<div class="w3-col m1 l2">
+						&nbsp;
+					</div>
+					<div class="w3-col m10 l8">
+						<article class="w3-container" ng-view="">
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</div>
+	
+	<div id="pageFooter" class="w3-container">
+		
+		<div  class="w3-container">
+			<div class="w3-row">
+				<div class="w3-col m1 l2">
+					&nbsp;
+				</div>
+				<div class="w3-col m10 l8">
+					<div marked src="'markdown/footer'">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+</body>
+</html>
