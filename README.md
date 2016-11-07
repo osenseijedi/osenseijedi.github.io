@@ -15,3 +15,7 @@ Put the pages in /markdown. They will then be published at #/pagename.
 Design can be completely changed in index.html
 main.html defines how the article only is displayed.
 
+
+# Live demo
+
+Live demo at : https://osenseijedi.github.io
